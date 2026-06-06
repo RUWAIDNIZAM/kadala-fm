@@ -293,5 +293,4 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ content: `🎶 Now playing: **${stationObj.name}**` });
 });
 
-// VERY IMPORTANT: Paste your Bot Token here!
-client.login('YOUR_DISCORD_BOT_TOKEN_HERE');
+client.login(process.env.DISCORD_TOKEN);
